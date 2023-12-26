@@ -1,11 +1,14 @@
 @import "nullstyles";
 @import "imports";
 
+// Import layout styles
+@import "layout/header";
+
 :root {
   @extend %mainFont;
 
   --base-container-width: 1504px;
-  --base-container-margin: 20px;
+  --base-container-margin: 1rem;
 
   font-size: 20px; // 1rem = 20px
 }

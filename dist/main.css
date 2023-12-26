@@ -1,0 +1,29 @@
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/app.scss ***!
+  \**********************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Oranienbaum", serif;
+}
+
+header.appHeader {
+  background: rgb(1, 14, 15);
+  width: 100vw;
+}
+header.appHeader .innerContainer {
+  width: min(var(--base-container-width), 100% - 2 * var(--base-container-margin));
+  margin-left: auto;
+  margin-right: auto;
+  background: red;
+}
+
+:root {
+  --base-container-width: 1504px;
+  --base-container-margin: 1rem;
+  font-size: 20px;
+}

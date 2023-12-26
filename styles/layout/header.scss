@@ -1,0 +1,13 @@
+header.appHeader {
+  background: rgb(1 14 15);
+  width: 100vw;
+
+  .innerContainer {
+    @include uiContainer(
+       var(--base-container-width),
+       var(--base-container-margin)
+    );
+
+    background: red;
+  }
+}
