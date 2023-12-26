@@ -74,6 +74,7 @@ header.appHeader {
         align-items: center;
         gap: toLocalEm(20, 20);
 
+        // TODO Add animations to media links
         a.media__link {
           @extend %flexCenter;
 
