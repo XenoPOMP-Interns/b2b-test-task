@@ -1,3 +1,9 @@
-@import "@styles/nullstyles.scss";
+@import "styles/nullstyles";
+@import "styles/fonts";
+
+:root {
+  @extend %mainFont;
+}
+
 // Import Bootstrap styles if you need
 // @import "~bootstrap/scss/bootstrap";
