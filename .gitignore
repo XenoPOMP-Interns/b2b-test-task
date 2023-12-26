@@ -1,5 +1,7 @@
 # Production
-dist/
+# Dist folder should be added to repo to
+# demostrate built site.
+# dist/
 node_modules/
 
 # IDEs folders
