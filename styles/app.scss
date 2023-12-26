@@ -1,8 +1,11 @@
-@import "styles/nullstyles";
-@import "styles/fonts";
+@import "nullstyles";
+@import "imports";
 
 :root {
   @extend %mainFont;
+
+  --base-container-width: 1300px;
+  --base-container-margin: 20px;
 }
 
 // Import Bootstrap styles if you need
