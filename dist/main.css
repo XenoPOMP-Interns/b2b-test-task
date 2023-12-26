@@ -33,6 +33,7 @@ header.appHeader .innerContainer {
 header.appHeader .innerContainer section.branding {
   display: inherit;
   align-items: inherit;
+  gap: 1.25em;
 }
 header.appHeader .innerContainer section.branding svg.logo {
   height: 2.55em;

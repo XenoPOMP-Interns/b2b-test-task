@@ -19,6 +19,7 @@ header.appHeader {
     section.branding {
       display: inherit;
       align-items: inherit;
+      gap: toLocalEm(25, 20);
 
       svg.logo {
         height: toLocalEm(51, 20);
