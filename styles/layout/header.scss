@@ -14,11 +14,29 @@ header.appHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1rem; // 1em = 20px
 
     section.branding {
+      display: inherit;
+      align-items: inherit;
+
       svg.logo {
-        height: 2.55em;
+        height: toLocalEm(51, 20);
+      }
+
+      article.short__desc {
+        @extend %secondaryFont;
+
+        max-width: toLocalEm(201, 20);
+        line-height: toLocalEm(18.2, 20);
+
+        font-weight: 400;
+
+        span.desc {
+          font-size: toLocalEm(14, 20);
+          letter-spacing: 0;
+          text-align: left;
+        }
       }
     }
   }

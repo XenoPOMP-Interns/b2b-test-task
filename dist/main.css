@@ -11,6 +11,10 @@
   font-family: "Oranienbaum", serif;
 }
 
+header.appHeader .innerContainer section.branding article.short__desc {
+  font-family: "Noto Sans", sans-serif;
+}
+
 header.appHeader {
   background: rgb(1, 14, 15);
   color: #E5C97B;
@@ -26,8 +30,22 @@ header.appHeader .innerContainer {
   align-items: center;
   font-size: 1rem;
 }
+header.appHeader .innerContainer section.branding {
+  display: inherit;
+  align-items: inherit;
+}
 header.appHeader .innerContainer section.branding svg.logo {
   height: 2.55em;
+}
+header.appHeader .innerContainer section.branding article.short__desc {
+  max-width: 10.05em;
+  line-height: 0.91em;
+  font-weight: 400;
+}
+header.appHeader .innerContainer section.branding article.short__desc span.desc {
+  font-size: 0.7em;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 :root {
