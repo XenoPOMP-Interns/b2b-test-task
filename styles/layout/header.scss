@@ -75,24 +75,24 @@ header.appHeader {
         gap: toLocalEm(20, 20);
 
         a.media__link {
+          @extend %flexCenter;
+
           background: radial-gradient(119.38% 119.38% at 10.4% 8.42%, #3D3D3D 0%, #141414 100%);
 
           width: toLocalEm(40, 20);
           height: toLocalEm(40, 20);
           border-radius: toLocalEm(8, 20);
           padding: toLocalEm(2.77, 20);
+          position: relative;
 
-          .innerButton {
-            @extend %flexCenter;
+          svg.border {
+            $padding: toLocalEm(2.77, 20);
 
-            width: 100%;
-            height: 100%;
-            // border-radius: inherit;
-
-            border-width: 5px;
-            border-style: solid;
-            border-image-slice: 25%;
-            border-image-source: linear-gradient(0deg, #9F734C -0.57%, #BA945E 12.57%, #D1B16E 27.75%, #E2C579 41.91%, #ECD180 56.07%, #F0D683 70.23%, #E7CC7D 75.29%, #D2B16E 84.39%, #AF8757 95.52%, #9F734C 100.57%);
+            position: absolute;
+            top: $padding / 2;
+            left: $padding / 2;
+            width: calc(100% - $padding);
+            height: calc(100% - $padding);
           }
         }
       }
