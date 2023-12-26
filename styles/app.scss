@@ -4,8 +4,10 @@
 :root {
   @extend %mainFont;
 
-  --base-container-width: 1300px;
+  --base-container-width: 1504px;
   --base-container-margin: 20px;
+
+  font-size: 20px; // 1rem = 20px
 }
 
 // Import Bootstrap styles if you need
