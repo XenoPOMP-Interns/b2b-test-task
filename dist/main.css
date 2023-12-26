@@ -24,7 +24,12 @@ header.appHeader .innerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
 }
+header.appHeader .innerContainer section.branding svg.logo {
+  height: 2.55em;
+}
+
 :root {
   --base-container-width: 1504px;
   --base-container-margin: 2rem;
