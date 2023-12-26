@@ -7,11 +7,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   font-family: "Oranienbaum", serif;
 }
 
-header.appHeader .innerContainer section.branding article.short__desc {
+header.appHeader .innerContainer section.contacts a.contact__link, header.appHeader .innerContainer section.branding article.short__desc {
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -43,10 +47,35 @@ header.appHeader .innerContainer section.branding article.short__desc {
   line-height: 0.91em;
   font-weight: 400;
 }
-header.appHeader .innerContainer section.branding article.short__desc span.desc {
+header.appHeader .innerContainer section.branding article.short__desc h2.desc {
   font-size: 0.7em;
   letter-spacing: 0;
   text-align: left;
+  font-weight: 400;
+}
+header.appHeader .innerContainer section.contacts {
+  display: inherit;
+  align-items: inherit;
+  gap: 3.7em;
+}
+header.appHeader .innerContainer section.contacts a.contact__link {
+  font-size: 0.75em;
+  line-height: 1.2133333333em;
+  color: #F0D683;
+  text-decoration: underline dashed 1px currentColor;
+}
+header.appHeader .innerContainer section.contacts article.contact__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+header.appHeader .innerContainer section.contacts article.contact__data h3.phone__number {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #FFF;
 }
 
 :root {

@@ -33,10 +33,41 @@ header.appHeader {
 
         font-weight: 400;
 
-        span.desc {
+        h2.desc {
           font-size: toLocalEm(14, 20);
           letter-spacing: 0;
           text-align: left;
+          font-weight: 400;
+        }
+      }
+    }
+
+    section.contacts {
+      display: inherit;
+      align-items: inherit;
+      gap: toLocalEm(74, 20);
+
+      a.contact__link {
+        @extend %secondaryFont;
+
+        font-size: toLocalEm(15, 20); // 1em = 15px
+        line-height: toLocalEm(18.2, 15);
+        color: #F0D683;
+        text-decoration: underline dashed 1px currentColor;
+      }
+
+      article.contact__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+
+        h3.phone__number {
+          font-size: toLocalEm(20, 20); // 1em = 20px
+          line-height: toLocalEm(24, 20);
+          font-weight: 400;
+          letter-spacing: 0.05em;
+          color: #FFF;
         }
       }
     }
