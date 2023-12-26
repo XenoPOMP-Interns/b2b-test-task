@@ -20,6 +20,12 @@ header.appHeader .innerContainer section.contacts article.email span.label__for_
   font-family: "Noto Sans", sans-serif;
 }
 
+header.appHeader .innerContainer section.contacts article.social__media a.media__link .innerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header.appHeader {
   background: rgb(1, 14, 15);
   color: #E5C97B;
@@ -29,7 +35,6 @@ header.appHeader .innerContainer {
   width: min(var(--base-container-width), 100% - 2 * var(--base-container-margin));
   margin-left: auto;
   margin-right: auto;
-  background: rgba(255, 0, 0, 0.25);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +47,8 @@ header.appHeader .innerContainer section.branding {
 }
 header.appHeader .innerContainer section.branding svg.logo {
   height: 2.55em;
+  margin-top: 1.3em;
+  margin-bottom: 1.2em;
 }
 header.appHeader .innerContainer section.branding article.short__desc {
   max-width: 10.05em;
@@ -75,6 +82,26 @@ header.appHeader .innerContainer section.contacts article.email {
 header.appHeader .innerContainer section.contacts article.email span.label__for__email {
   text-decoration: none;
   color: #767676;
+}
+header.appHeader .innerContainer section.contacts article.social__media {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+header.appHeader .innerContainer section.contacts article.social__media a.media__link {
+  background: radial-gradient(119.38% 119.38% at 10.4% 8.42%, #3D3D3D 0%, #141414 100%);
+  width: 2em;
+  height: 2em;
+  border-radius: 0.4em;
+  padding: 0.1385em;
+}
+header.appHeader .innerContainer section.contacts article.social__media a.media__link .innerButton {
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-image-slice: 25%;
+  border-image-source: linear-gradient(0deg, #9F734C -0.57%, #BA945E 12.57%, #D1B16E 27.75%, #E2C579 41.91%, #ECD180 56.07%, #F0D683 70.23%, #E7CC7D 75.29%, #D2B16E 84.39%, #AF8757 95.52%, #9F734C 100.57%);
 }
 header.appHeader .innerContainer section.contacts article.contact__data {
   display: flex;
