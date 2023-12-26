@@ -47,13 +47,26 @@ header.appHeader {
       align-items: inherit;
       gap: toLocalEm(74, 20);
 
-      a.contact__link {
+      a.contact__link,
+      article.email span.label__for__email {
         @extend %secondaryFont;
 
         font-size: toLocalEm(15, 20); // 1em = 15px
         line-height: toLocalEm(18.2, 15);
         color: #F0D683;
         text-decoration: underline dashed 1px currentColor;
+      }
+
+      article.email {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        span.label__for__email {
+          text-decoration: none;
+          color: #767676;
+        }
       }
 
       article.contact__data {

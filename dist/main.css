@@ -15,7 +15,8 @@ a {
   font-family: "Oranienbaum", serif;
 }
 
-header.appHeader .innerContainer section.contacts a.contact__link, header.appHeader .innerContainer section.branding article.short__desc {
+header.appHeader .innerContainer section.contacts a.contact__link,
+header.appHeader .innerContainer section.contacts article.email span.label__for__email, header.appHeader .innerContainer section.branding article.short__desc {
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -58,11 +59,22 @@ header.appHeader .innerContainer section.contacts {
   align-items: inherit;
   gap: 3.7em;
 }
-header.appHeader .innerContainer section.contacts a.contact__link {
+header.appHeader .innerContainer section.contacts a.contact__link,
+header.appHeader .innerContainer section.contacts article.email span.label__for__email {
   font-size: 0.75em;
   line-height: 1.2133333333em;
   color: #F0D683;
   text-decoration: underline dashed 1px currentColor;
+}
+header.appHeader .innerContainer section.contacts article.email {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+header.appHeader .innerContainer section.contacts article.email span.label__for__email {
+  text-decoration: none;
+  color: #767676;
 }
 header.appHeader .innerContainer section.contacts article.contact__data {
   display: flex;
