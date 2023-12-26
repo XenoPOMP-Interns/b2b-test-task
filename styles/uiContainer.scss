@@ -1,0 +1,8 @@
+@mixin uiContainer($maxWidth, $margin) {
+  // Constraint max width of container
+  width: min($maxWidth, calc(100% - 2 * $margin));
+
+  // Align container to center
+  margin-left: auto;
+  margin-right: auto;
+}
