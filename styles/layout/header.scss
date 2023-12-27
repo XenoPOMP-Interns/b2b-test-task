@@ -78,7 +78,6 @@ header.appHeader {
         align-items: center;
         gap: toLocalEm(20, 20);
 
-        // TODO Add animations to media links
         a.media__link {
           $animDuration: .15s ease;
 
@@ -193,6 +192,7 @@ header.appHeader {
         width: 100%;
         justify-content: center;
         padding: 1em;
+        z-index: 2;
 
         &:after,
         &:before {
