@@ -15,7 +15,14 @@ a {
   text-decoration: none;
 }
 
-:root {
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+:root, .main__welcome__wrapper section.main__welcome .furniture__wrapper article.economy__welcome .reserve__welcome button.reserve__button {
   font-family: "Oranienbaum", serif;
 }
 
@@ -288,10 +295,24 @@ header.appHeader .innerContainer section.contacts article.contact__data h3.phone
   line-height: 1.3em;
   text-align: center;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 .main__welcome__wrapper section.main__welcome .furniture__wrapper article.economy__welcome strong {
   font-weight: inherit;
   color: #F0D683;
+}
+.main__welcome__wrapper section.main__welcome .furniture__wrapper article.economy__welcome .reserve__welcome button.reserve__button {
+  background: linear-gradient(90deg, #67310A -108.98%, #F0D683 129.77%);
+  text-transform: uppercase;
+  font-size: 0.6666666667em;
+  padding: 0.9em 1.6em;
+  border-radius: 0.5em;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  font-weight: 400;
 }
 .main__welcome__wrapper section.main__welcome .furniture__wrapper img.sofa__welcome {
   grid-column-start: 1;

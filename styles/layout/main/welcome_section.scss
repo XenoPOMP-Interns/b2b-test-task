@@ -64,15 +64,39 @@
 
         background: red;
 
-        font-size: toLocalEm(30, 20); // 1em = 20px
+        font-size: toLocalEm(30, 20); // 1em = 30px
         font-weight: 700;
         line-height: toLocalEm(39, 30);
         text-align: center;
         color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: toLocalEm(30, 30);
 
         strong {
           font-weight: inherit;
           color: #F0D683;
+        }
+
+        .reserve__welcome {
+          button.reserve__button {
+            @extend %mainFont;
+
+            background: linear-gradient(90deg, #67310A -108.98%, #F0D683 129.77%);
+            text-transform: uppercase;
+            font-size: toLocalEm(20, 30); // 1em = 20px
+
+            padding:
+              toLocalEm(18, 20)
+              toLocalEm(32, 20)
+            ;
+
+            border-radius: toLocalEm(10, 20);
+            line-height: toLocalEm(24, 20);
+            letter-spacing: .05em;
+            font-weight: 400;
+          }
         }
       }
 
