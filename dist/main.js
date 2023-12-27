@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @styles/app.scss */ \"./styles/app.scss\");\n/* harmony import */ var _assets_images_backgrounds_furniture_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/backgrounds/furniture.png */ \"./src/assets/images/backgrounds/furniture.png\");\n/* harmony import */ var _assets_images_backgrounds_shadow_bg_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/backgrounds/shadow-bg.png */ \"./src/assets/images/backgrounds/shadow-bg.png\");\n/* harmony import */ var _lib_MenuHandler__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/MenuHandler */ \"./src/lib/MenuHandler.ts\");\n// App styles\r\n\r\n\r\n\r\n\r\nvar menuHandler = new _lib_MenuHandler__WEBPACK_IMPORTED_MODULE_3__.MenuHandler();\r\n\n\n//# sourceURL=webpack://my-webpack-project/./src/app.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @styles/app.scss */ \"./styles/app.scss\");\n/* harmony import */ var _assets_images_backgrounds_furniture_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/backgrounds/furniture.png */ \"./src/assets/images/backgrounds/furniture.png\");\n/* harmony import */ var _assets_images_backgrounds_shadow_bg_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/backgrounds/shadow-bg.png */ \"./src/assets/images/backgrounds/shadow-bg.png\");\n/* harmony import */ var _assets_images_other_arrow_left_1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/other/arrow-left 1.png */ \"./src/assets/images/other/arrow-left 1.png\");\n/* harmony import */ var _lib_MenuHandler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/MenuHandler */ \"./src/lib/MenuHandler.ts\");\n// App styles\r\n\r\n\r\n\r\n\r\n\r\nvar menuHandler = new _lib_MenuHandler__WEBPACK_IMPORTED_MODULE_4__.MenuHandler();\r\n\n\n//# sourceURL=webpack://my-webpack-project/./src/app.ts?");
 
 /***/ }),
 
@@ -71,6 +71,17 @@ eval("module.exports = __webpack_require__.p + \"31081b65ef46b0ea1af8.png\";\n\n
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"a82e00edccac5b498e31.png\";\n\n//# sourceURL=webpack://my-webpack-project/./src/assets/images/backgrounds/shadow-bg.png?");
+
+/***/ }),
+
+/***/ "./src/assets/images/other/arrow-left 1.png":
+/*!**************************************************!*\
+  !*** ./src/assets/images/other/arrow-left 1.png ***!
+  \**************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = \"data:image/png;base64,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\";\n\n//# sourceURL=webpack://my-webpack-project/./src/assets/images/other/arrow-left_1.png?");
 
 /***/ })
 

@@ -80,6 +80,12 @@
         }
 
         .reserve__welcome {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: toLocalEm(20, 30);
+          position: relative;
+
           button.reserve__button {
             @extend %mainFont;
 
@@ -96,6 +102,31 @@
             line-height: toLocalEm(24, 20);
             letter-spacing: .05em;
             font-weight: 400;
+          }
+
+          .call_to_action {
+            font-size: toLocalEm(12, 30); // 1em = 12px
+            line-height: toLocalEm(15.6, 12);
+            height: fit-content;
+            width: min(100%, toLocalEm(249.91, 12));
+            text-align: center;
+            font-weight: 400;
+          }
+
+          .arrow {
+            @extend %flexCenter;
+
+            position: absolute;
+            top: 0;
+            right: .4em;
+            height: 100%;
+            width: toLocalEm(58, 30);
+
+            .body {
+              width: 100%;
+              aspect-ratio: 58/91;
+              background: url("assets/images/other/arrow-left 1.png");
+            }
           }
         }
       }
