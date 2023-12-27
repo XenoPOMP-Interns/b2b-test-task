@@ -44,6 +44,12 @@ header.appHeader .innerContainer section.contacts article.social__media a.media_
 /*
   Add padding to top and to bottom.
  */
+/*
+  Add margin to left and to right.
+ */
+/*
+  Add margin to top and to bottom.
+ */
 header.appHeader {
   background: rgb(1, 14, 15);
   color: #E5C97B;
@@ -220,6 +226,58 @@ header.appHeader .innerContainer section.contacts article.contact__data h3.phone
   header.appHeader .innerContainer section.contacts article.email {
     align-items: center;
   }
+}
+
+.main__welcome__wrapper {
+  position: relative;
+}
+.main__welcome__wrapper:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  background: url(a82e00edccac5b498e31.png);
+  background-size: cover;
+}
+.main__welcome__wrapper section.main__welcome {
+  width: min(var(--base-container-width), 100% - 2 * var(--base-container-margin));
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  padding: 4.45em 0 8.02em 0;
+}
+.main__welcome__wrapper section.main__welcome h1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2.8em;
+  line-height: 1.2em;
+  font-weight: 400;
+  max-width: 14.1428571429em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__welcome__wrapper section.main__welcome h1 span.primary {
+  color: #F0D683;
+}
+.main__welcome__wrapper section.main__welcome h1 span.secondary {
+  color: #FFFFFF;
+}
+.main__welcome__wrapper section.main__welcome .furniture__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 8.0297em 1fr;
+}
+.main__welcome__wrapper section.main__welcome .furniture__wrapper img.sofa__welcome {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 :root {

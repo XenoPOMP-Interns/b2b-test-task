@@ -1,0 +1,66 @@
+.main__welcome__wrapper {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background: url("assets/images/backgrounds/shadow-bg.png");
+    background-size: cover;
+  }
+
+  section.main__welcome {
+    @include uiContainer(
+      var(--base-container-width),
+      var(--base-container-margin)
+    );
+
+    font-size: 1rem; // 1em = 20px
+    padding:
+            toLocalEm(89, 20)
+            0
+            toLocalEm(160.4, 20)
+            0
+    ;
+
+    h1 {
+      @include margin-horizontal(auto);
+
+      text-align: center;
+      font-size: toLocalEm(56, 20); // 1em = 56px
+      line-height: toLocalEm(67.2, 56);
+      font-weight: 400;
+      max-width: toLocalEm(792, 56);
+      text-transform: uppercase;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span.primary {
+        color: #F0D683;
+      }
+
+      span.secondary {
+        color: #FFFFFF;
+      }
+    }
+
+    .furniture__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr toLocalEm(160.594, 20) 1fr;
+
+      img.sofa__welcome {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+    }
+  }
+}

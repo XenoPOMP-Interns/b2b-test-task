@@ -14,3 +14,19 @@
   padding-bottom: $value;
 }
 
+/*
+  Add margin to left and to right.
+ */
+@mixin margin-horizontal($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+/*
+  Add margin to top and to bottom.
+ */
+@mixin margin-vertical($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+

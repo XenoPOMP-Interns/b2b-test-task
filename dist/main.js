@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @styles/app.scss */ \"./styles/app.scss\");\n/* harmony import */ var _lib_MenuHandler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/MenuHandler */ \"./src/lib/MenuHandler.ts\");\n// App styles\r\n\r\n// Bootstrap\r\n// import 'bootstrap';\r\n// JQuery\r\n// import $ from 'jquery';\r\n\r\nvar menuHandler = new _lib_MenuHandler__WEBPACK_IMPORTED_MODULE_1__.MenuHandler();\r\n\n\n//# sourceURL=webpack://my-webpack-project/./src/app.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @styles/app.scss */ \"./styles/app.scss\");\n/* harmony import */ var _assets_images_backgrounds_furniture_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/backgrounds/furniture.png */ \"./src/assets/images/backgrounds/furniture.png\");\n/* harmony import */ var _assets_images_backgrounds_shadow_bg_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/backgrounds/shadow-bg.png */ \"./src/assets/images/backgrounds/shadow-bg.png\");\n/* harmony import */ var _lib_MenuHandler__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/MenuHandler */ \"./src/lib/MenuHandler.ts\");\n// App styles\r\n\r\n\r\n\r\n\r\nvar menuHandler = new _lib_MenuHandler__WEBPACK_IMPORTED_MODULE_3__.MenuHandler();\r\n\n\n//# sourceURL=webpack://my-webpack-project/./src/app.ts?");
 
 /***/ }),
 
@@ -49,6 +49,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"MenuHandler\": () => (/* binding */ MenuHandler)\n/* harmony export */ });\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\r\nvar MenuHandler = /** @class */ (function () {\r\n    function MenuHandler(isExpanded) {\r\n        if (isExpanded === void 0) { isExpanded = false; }\r\n        this.isExpanded = false;\r\n        this.isExpanded = isExpanded;\r\n        this.attach();\r\n    }\r\n    MenuHandler.prototype.attach = function () {\r\n        var _this = this;\r\n        jquery__WEBPACK_IMPORTED_MODULE_0___default()('#expandMenuButton').on('click', function () {\r\n            var menuElement = document.querySelector('#headerMenuContacts');\r\n            _this.isExpanded = !_this.isExpanded;\r\n            if (_this.isExpanded) {\r\n                menuElement.classList.remove('mobile__hidden');\r\n                return;\r\n            }\r\n            menuElement.classList.add('mobile__hidden');\r\n        });\r\n    };\r\n    return MenuHandler;\r\n}());\r\n\r\n\n\n//# sourceURL=webpack://my-webpack-project/./src/lib/MenuHandler.ts?");
+
+/***/ }),
+
+/***/ "./src/assets/images/backgrounds/furniture.png":
+/*!*****************************************************!*\
+  !*** ./src/assets/images/backgrounds/furniture.png ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"31081b65ef46b0ea1af8.png\";\n\n//# sourceURL=webpack://my-webpack-project/./src/assets/images/backgrounds/furniture.png?");
+
+/***/ }),
+
+/***/ "./src/assets/images/backgrounds/shadow-bg.png":
+/*!*****************************************************!*\
+  !*** ./src/assets/images/backgrounds/shadow-bg.png ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"a82e00edccac5b498e31.png\";\n\n//# sourceURL=webpack://my-webpack-project/./src/assets/images/backgrounds/shadow-bg.png?");
 
 /***/ })
 
@@ -103,6 +125,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -117,6 +151,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
