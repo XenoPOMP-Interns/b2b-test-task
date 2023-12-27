@@ -54,9 +54,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr toLocalEm(160.594, 20) 1fr;
+      position: relative;
 
       article.economy__welcome {
-        @include gridColumn(2, 1);
+        // @include gridColumn(2, 1);
       }
 
       img.sofa__welcome {
@@ -64,6 +65,7 @@
 
         grid-row-start: 2;
         grid-row-end: 4;
+        width: 100%;
       }
     }
   }

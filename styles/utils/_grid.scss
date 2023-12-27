@@ -2,3 +2,8 @@
   grid-column-start: $startsWith;
   grid-column-end: $startsWith + $span;
 }
+
+@mixin gridRow($startsWith, $span) {
+  grid-row-start: $startsWith;
+  grid-row-end: $startsWith + $span;
+}
