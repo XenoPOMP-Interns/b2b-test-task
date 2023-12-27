@@ -95,9 +95,13 @@ header.appHeader .innerContainer section.contacts article.social__media a.media_
   border-radius: 0.4em;
   padding: 0.1385em;
   position: relative;
+  transition: 0.08s ease filter;
 }
 header.appHeader .innerContainer section.contacts article.social__media a.media__link:hover svg.icon stop {
   stop-color: white;
+}
+header.appHeader .innerContainer section.contacts article.social__media a.media__link:active {
+  filter: brightness(0.9);
 }
 header.appHeader .innerContainer section.contacts article.social__media a.media__link svg.border, header.appHeader .innerContainer section.contacts article.social__media a.media__link svg.icon {
   transition: fill 0.15s ease;

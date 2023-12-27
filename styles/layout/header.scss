@@ -88,10 +88,16 @@ header.appHeader {
           padding: toLocalEm(2.77, 20);
           position: relative;
 
+          transition: .08s ease filter;
+
           &:hover {
             svg.icon stop  {
               stop-color: white;
             }
+          }
+
+          &:active {
+            filter: brightness(.9);
           }
 
           svg.border, svg.icon {
