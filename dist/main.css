@@ -1,6 +1,7 @@
 /*!**********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/app.scss ***!
   \**********************************************************************************************************/
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -26,6 +27,12 @@ header.appHeader .innerContainer section.contacts article.social__media a.media_
   align-items: center;
 }
 
+/*
+  Генератор mobile first медиа-запросов
+*/
+/*
+  Генератор desktop first медиа-запросов
+*/
 header.appHeader {
   background: rgb(1, 14, 15);
   color: #E5C97B;
