@@ -210,6 +210,17 @@ header.appHeader .innerContainer section.contacts article.contact__data h3.phone
     left: 100%;
   }
 }
+@media (max-width: 992px) and (max-width: 769px) {
+  header.appHeader .innerContainer section.contacts {
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+  header.appHeader .innerContainer section.contacts article.contact__data,
+  header.appHeader .innerContainer section.contacts article.email {
+    align-items: center;
+  }
+}
 
 :root {
   --base-container-width: 1504px;
