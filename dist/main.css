@@ -38,6 +38,12 @@ header.appHeader .innerContainer section.contacts article.social__media a.media_
 /*
   Media query for max-width generator.
 */
+/*
+  Add padding to left and to right.
+ */
+/*
+  Add padding to top and to bottom.
+ */
 header.appHeader {
   background: rgb(1, 14, 15);
   color: #E5C97B;
@@ -72,6 +78,9 @@ header.appHeader .innerContainer section.branding article.short__desc h2.desc {
   letter-spacing: 0;
   text-align: left;
   font-weight: 400;
+}
+header.appHeader .innerContainer section.branding .menu__icon {
+  display: none;
 }
 header.appHeader .innerContainer section.contacts {
   display: inherit;
@@ -144,6 +153,59 @@ header.appHeader .innerContainer section.contacts article.contact__data h3.phone
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #FFF;
+}
+@media (max-width: 1440px) {
+  header.appHeader .innerContainer {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 1200px) {
+  header.appHeader .innerContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.3em;
+  }
+}
+@media (max-width: 992px) {
+  header.appHeader .innerContainer {
+    padding-bottom: 0;
+    position: relative;
+  }
+  header.appHeader .innerContainer section.branding article.short__desc {
+    display: none;
+  }
+  header.appHeader .innerContainer section.branding .menu__icon {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    cursor: pointer;
+  }
+  header.appHeader .innerContainer section.contacts {
+    background: rgb(0, 0, 255);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    padding: 1em;
+  }
+  header.appHeader .innerContainer section.contacts:after, header.appHeader .innerContainer section.contacts:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 100%;
+    width: var(--base-container-margin);
+    background-color: inherit;
+  }
+  header.appHeader .innerContainer section.contacts:after {
+    right: 100%;
+  }
+  header.appHeader .innerContainer section.contacts:before {
+    left: 100%;
+  }
 }
 
 :root {

@@ -1,4 +1,4 @@
-@import "config";
+@import "../config";
 
 @function get-breakpoint-value($breakpoint-name) {
   $breakpoint: map-get($grid-breakpoints, $breakpoint-name);

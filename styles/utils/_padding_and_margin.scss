@@ -1,0 +1,16 @@
+/*
+  Add padding to left and to right.
+ */
+@mixin padding-horizontal($value) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+/*
+  Add padding to top and to bottom.
+ */
+@mixin padding-vertical($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+

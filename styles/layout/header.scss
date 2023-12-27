@@ -40,6 +40,10 @@ header.appHeader {
           font-weight: 400;
         }
       }
+
+      .menu__icon {
+        display: none;
+      }
     }
 
     section.contacts {
@@ -141,6 +145,68 @@ header.appHeader {
           font-weight: 400;
           letter-spacing: 0.05em;
           color: #FFF;
+        }
+      }
+    }
+
+    @include end-at(xl2) {
+      font-size: .95rem;
+    }
+
+    @include end-at(xl) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1.3em;
+    }
+
+    @include end-at(lg) {
+      padding-bottom: 0;
+      position: relative;
+
+      section.branding {
+        article.short__desc {
+          display: none;
+        }
+
+        .menu__icon {
+          aspect-ratio: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width:  1.5em;
+          cursor: pointer;
+        }
+      }
+
+      section.contacts {
+        $gapWidth: var(--base-container-margin);
+
+        // background: rgb(1 14 15);
+        background: rgb(0 0 255 / 1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        padding: 1em;
+
+        &:after,
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          height: 100%;
+          width: $gapWidth;
+          background-color: inherit;
+        }
+
+        &:after {
+          right: 100%;
+        }
+
+        &:before {
+          left: 100%;
         }
       }
     }
