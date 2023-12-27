@@ -1,0 +1,4 @@
+@mixin gridColumn($startsWith, $span) {
+  grid-column-start: $startsWith;
+  grid-column-end: $startsWith + $span;
+}

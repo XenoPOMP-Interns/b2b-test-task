@@ -55,9 +55,13 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr toLocalEm(160.594, 20) 1fr;
 
+      article.economy__welcome {
+        @include gridColumn(2, 1);
+      }
+
       img.sofa__welcome {
-        grid-column-start: 1;
-        grid-column-end: 4;
+        @include gridColumn(1, 3);
+
         grid-row-start: 2;
         grid-row-end: 4;
       }
