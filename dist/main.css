@@ -192,6 +192,9 @@ header.appHeader .innerContainer section.contacts article.contact__data h3.phone
     justify-content: center;
     padding: 1em;
   }
+  header.appHeader .innerContainer section.contacts.mobile__hidden {
+    display: none !important;
+  }
   header.appHeader .innerContainer section.contacts:after, header.appHeader .innerContainer section.contacts:before {
     position: absolute;
     content: "";

@@ -180,6 +180,10 @@ header.appHeader {
       }
 
       section.contacts {
+        &.mobile__hidden {
+          display: none !important;
+        }
+
         $gapWidth: var(--base-container-margin);
 
         // background: rgb(1 14 15);
