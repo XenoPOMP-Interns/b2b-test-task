@@ -52,12 +52,28 @@
 
     .furniture__wrapper {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1.4fr 1fr;
       grid-template-rows: 1fr toLocalEm(160.594, 20) 1fr;
       position: relative;
+      margin-top: toLocalEm(32, 20);
 
       article.economy__welcome {
-        // @include gridColumn(2, 1);
+        @include gridColumn(2, 1);
+
+        @extend %secondaryFont;
+
+        background: red;
+
+        font-size: toLocalEm(30, 20); // 1em = 20px
+        font-weight: 700;
+        line-height: toLocalEm(39, 30);
+        text-align: center;
+        color: #FFFFFF;
+
+        strong {
+          font-weight: inherit;
+          color: #F0D683;
+        }
       }
 
       img.sofa__welcome {

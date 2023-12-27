@@ -19,7 +19,7 @@ a {
   font-family: "Oranienbaum", serif;
 }
 
-header.appHeader .innerContainer section.contacts a.contact__link,
+.main__welcome__wrapper section.main__welcome .furniture__wrapper article.economy__welcome, header.appHeader .innerContainer section.contacts a.contact__link,
 header.appHeader .innerContainer section.contacts article.email span.label__for__email, header.appHeader .innerContainer section.branding article.short__desc {
   font-family: "Noto Sans", sans-serif;
 }
@@ -274,9 +274,24 @@ header.appHeader .innerContainer section.contacts article.contact__data h3.phone
 }
 .main__welcome__wrapper section.main__welcome .furniture__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1.4fr 1fr;
   grid-template-rows: 1fr 8.0297em 1fr;
   position: relative;
+  margin-top: 1.6em;
+}
+.main__welcome__wrapper section.main__welcome .furniture__wrapper article.economy__welcome {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: red;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-align: center;
+  color: #FFFFFF;
+}
+.main__welcome__wrapper section.main__welcome .furniture__wrapper article.economy__welcome strong {
+  font-weight: inherit;
+  color: #F0D683;
 }
 .main__welcome__wrapper section.main__welcome .furniture__wrapper img.sofa__welcome {
   grid-column-start: 1;
