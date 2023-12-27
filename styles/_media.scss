@@ -11,7 +11,7 @@
 }
 
 /*
-  Генератор mobile first медиа-запросов
+  Media query for min-width generator.
 */
 @mixin start-at($breakpoint-name) {
   @media (min-width: get-breakpoint-value($breakpoint-name)) {
@@ -20,7 +20,7 @@
 }
 
 /*
-  Генератор desktop first медиа-запросов
+  Media query for max-width generator.
 */
 @mixin end-at($breakpoint-name) {
   @media (max-width: get-breakpoint-value($breakpoint-name)) {

@@ -1,7 +1,6 @@
 /*!**********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/app.scss ***!
   \**********************************************************************************************************/
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -28,10 +27,16 @@ header.appHeader .innerContainer section.contacts article.social__media a.media_
 }
 
 /*
-  Генератор mobile first медиа-запросов
+  Convert pixels to rems with Pixel perfect
+ */
+/*
+  Calculate local em value
+ */
+/*
+  Media query for min-width generator.
 */
 /*
-  Генератор desktop first медиа-запросов
+  Media query for max-width generator.
 */
 header.appHeader {
   background: rgb(1, 14, 15);
