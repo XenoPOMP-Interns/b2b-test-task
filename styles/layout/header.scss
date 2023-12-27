@@ -76,6 +76,8 @@ header.appHeader {
 
         // TODO Add animations to media links
         a.media__link {
+          $animDuration: .15s ease;
+
           @extend %flexCenter;
 
           background: radial-gradient(119.38% 119.38% at 10.4% 8.42%, #3D3D3D 0%, #141414 100%);
@@ -86,6 +88,20 @@ header.appHeader {
           padding: toLocalEm(2.77, 20);
           position: relative;
 
+          &:hover {
+            svg.icon stop  {
+              stop-color: white;
+            }
+          }
+
+          svg.border, svg.icon {
+            transition: fill $animDuration;
+
+            stop {
+              transition: stop-color $animDuration;
+            }
+          }
+
           svg.border {
             $padding: toLocalEm(2.77, 20);
 
@@ -94,9 +110,14 @@ header.appHeader {
             left: $padding / 2;
             width: calc(100% - $padding);
             height: calc(100% - $padding);
+            z-index: 0;
+
+            // fill: red;
           }
 
           svg.icon {
+            z-index: 2;
+
 
           }
         }

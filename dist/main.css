@@ -96,12 +96,25 @@ header.appHeader .innerContainer section.contacts article.social__media a.media_
   padding: 0.1385em;
   position: relative;
 }
+header.appHeader .innerContainer section.contacts article.social__media a.media__link:hover svg.icon stop {
+  stop-color: white;
+}
+header.appHeader .innerContainer section.contacts article.social__media a.media__link svg.border, header.appHeader .innerContainer section.contacts article.social__media a.media__link svg.icon {
+  transition: fill 0.15s ease;
+}
+header.appHeader .innerContainer section.contacts article.social__media a.media__link svg.border stop, header.appHeader .innerContainer section.contacts article.social__media a.media__link svg.icon stop {
+  transition: stop-color 0.15s ease;
+}
 header.appHeader .innerContainer section.contacts article.social__media a.media__link svg.border {
   position: absolute;
   top: 0.1385em/2;
   left: 0.1385em/2;
   width: calc(100% - 0.1385em);
   height: calc(100% - 0.1385em);
+  z-index: 0;
+}
+header.appHeader .innerContainer section.contacts article.social__media a.media__link svg.icon {
+  z-index: 2;
 }
 header.appHeader .innerContainer section.contacts article.contact__data {
   display: flex;
