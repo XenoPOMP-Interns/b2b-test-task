@@ -1,51 +1,17 @@
-# Webpack TypeScript template
+# Тестовое задание в компанию B2B
 
-This is a Webpack-based project. \
-Project supports ``SASS``, ``TypeScript``, ``Bootstrap``, ``JQuery`` and other useful libraries.
+Этот проект написан с использованием Webpack + TypeScript.
 
-## Getting started
-Before using this template, execute these commands in shell:
+__Исходный код__ можно найти в папке `src`.
+__Скомпилировнный статичный сайт__ можно найти в папке `dist`.
 
-```
-git clone --depth 1 --branch master https://github.com/XenoPOMP/webpack-typescript-template.git your-project-name
-cd your-project-name
-```
+Я добавил скомпилированный сайт в репозиторий для того, чтобы лучше показать результат своей работы 🧐
 
+## Скрипты
 
-### `npm`
-```
-npm install
-```
+Если же вы хотите собрать проект самостоятельно, то выполните следующие команды:
 
-### `yarn`
-```
-yarn install
-```
-
-## Available scripts
-
-### serve
-Runs dev server for project at localhost.
-
-### `npm`
-```
-npm run serve
-```
-
-### `yarn`
-```
-yarn serve
-```
-
-### build
-Builds a static site from your project files
-
-### `npm`
-```
-npm run build
-```
-
-### `yarn`
-```
-yarn build
+```shell
+npm run build 
+# yarn build
 ```
